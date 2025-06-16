@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fixture Mundial de Clubes 2025</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white min-h-screen flex flex-col items-center">
+
+  <header class="w-full bg-gray-800 p-6 text-center shadow-md">
+    <h1 class="text-3xl font-bold tracking-wide">🏆 Fixture Mundial de Clubes 2025</h1>
+  </header>
+
+  <main class="p-6 w-full max-w-4xl">
+    <section id="fixture" class="grid gap-4">
+      <!-- Acá se renderizan los partidos -->
+    </section>
+  </main>
+
+  <footer class="w-full text-center text-gray-400 p-4">
+    <small>Desarrollado por Lucas ☕</small>
+  </footer>
+  <!-- Modal -->
+<div id="modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
+  <div class="bg-gray-900 text-white p-6 rounded-lg max-w-md w-full relative">
+    <button id="cerrarModal" class="absolute top-2 right-3 text-white text-2xl leading-none">&times;</button>
+    <h2 class="text-xl font-bold mb-2">Estadio</h2>
+    <p id="contenidoModal" class="text-sm text-gray-300"></p>
+  </div>
+</div>
+  <script src="./js/fixture.js"></script>
+  <script src="./js/main.js"></script>
+  <script src="./js/wikiMap.js"></script>
+</body>
+</html>
